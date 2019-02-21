@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/multikart",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

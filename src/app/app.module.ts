@@ -15,6 +15,8 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { DemoComponent } from './demo/demo.component';
 import * as $ from 'jquery';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -30,6 +32,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     HttpModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     BrowserAnimationsModule,
     SharedModule,
     HttpClientModule,
