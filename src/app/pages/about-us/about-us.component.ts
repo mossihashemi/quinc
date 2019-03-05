@@ -15,19 +15,19 @@ export class AboutUsComponent implements OnInit {
   // Testimonial Carousel
   public testimonial = [{
      image: 'assets/images/avtar.jpg',
-     name: 'Mark jkcno',
-     designation: 'Designer',
-     description: 'you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings.',
+     name: 'MossiXYZ',
+     designation: 'Developer',
+     description: 'Spinach man who develop sofware!',
    }, {
      image: 'assets/images/2.jpg',
-     name: 'Adegoke Yusuff',
-     designation: 'Content Writer',
-     description: 'you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings.',
+     name: 'Mostafa HASHEMI',
+     designation: 'Designer',
+     description: '',
    }, {
      image: 'assets/images/avtar.jpg',
-     name: 'John Shipmen',
+     name: 'MossiXYZ',
      designation: 'Lead Developer',
-     description: 'you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings.',
+     description: '',
   }]
 
   // Teastimonial Slick slider config
@@ -49,24 +49,24 @@ export class AboutUsComponent implements OnInit {
   // Team 
   public team = [{
      image: 'assets/images/team/1.jpg',
-     name: 'Mark jkcno',
-     designation: 'Designer'
+     name: 'شرکت رنگسازی نیپون',
+     designation: 'تاسیس'
    }, {
      image: 'assets/images/team/2.jpg',
-     name: 'Adegoke Yusuff',
-     designation: 'Content Writer'
+     name: 'شرکت رنگسازی ایران',
+     designation: 'تاسیس'
    }, {
      image: 'assets/images/team/3.jpg',
-     name: 'John Shipmen',
-     designation: 'Lead Developer'
+     name: 'شرکت رنگسازی سحر',
+     designation: 'تاسیس'
    }, {
      image: 'assets/images/team/4.jpg',
-     name: 'Hileri Keol',
-     designation: 'CEO & Founder at Company'
+     name: 'شرکت مثال',
+     designation: 'Cتاسیس'
    }, {
      image: 'assets/images/team/3.jpg',
-     name: 'John Shipmen',
-     designation: 'Lead Developer'
+     name: 'شرکت فیثال',
+     designation: 'تاسیس'
   }]
 
   // Team Slick slider config
