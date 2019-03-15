@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
 
 export class ProductsService {
   
-  public currency : string = 'USD';
+  public currency : string = ' تومان ';
   public compareProducts: BehaviorSubject<Product[]> = new BehaviorSubject([]);
   public compareProduct: Product[] = [];
 

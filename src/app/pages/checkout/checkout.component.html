@@ -4,14 +4,14 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="page-title">
-          <h2>Checkout</h2>
+          <h2>صورتحساب و پرداخت</h2>
         </div>
       </div>
       <div class="col-sm-6">
         <nav aria-label="breadcrumb" class="theme-breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a [routerLink]="'/home/one'">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+            <li class="breadcrumb-item"><a [routerLink]="'/home/one'">صفحه اصلی</a></li>
+            <li class="breadcrumb-item active" aria-current="page">صورتحساب</li>
           </ol>
         </nav>
       </div>
@@ -28,64 +28,64 @@
           <div class="row">
             <div class="col-lg-6 col-sm-12 col-xs-12">
               <div class="checkout-title">
-                <h3>Billing Details</h3>
+                <h3>جزئیات صورتحساب</h3>
               </div>
               <div class="row">
                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                  <div class="field-label">First Name</div>
+                  <div class="field-label">نام</div>
                   <input type="text" name="field-name" value="" placeholder="">
                 </div>
                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                  <div class="field-label">Last Name </div>
+                  <div class="field-label">نام خانوادگی </div>
                   <input type="text" name="field-name" value="" placeholder="">
                 </div>
                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                  <div class="field-label">Phone</div>
+                  <div class="field-label">تلفن تماس</div>
                   <input type="text" name="field-name" value="" placeholder="">
                 </div>
                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                  <div class="field-label">Email Address</div>
+                  <div class="field-label">آدرس الکترونیکی</div>
                   <input type="text" name="field-name" value="" placeholder="">
                 </div>
                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                  <div class="field-label">Country</div>
+                  <div class="field-label">شهر</div>
                   <select>
-                    <option>India</option>
-                    <option>South Africa</option>
-                    <option>United State</option>
-                    <option>Australia</option>
+                    <option>تهران</option>
+                    <option>ورامین</option>
+                    <option>شهر ری</option>
+                    <option>شمیران</option>
                   </select>
                 </div>
                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                  <div class="field-label">Address</div>
-                  <input type="text" name="field-name" value="" placeholder="Street address">
+                  <div class="field-label">آدرس</div>
+                  <input type="text" name="field-name" value="" placeholder="آدرس">
                 </div>
                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                  <div class="field-label">Town/City</div>
+                  <div class="field-label">منطقه</div>
                   <input type="text" name="field-name" value="" placeholder="">
                 </div>
                 <div class="form-group col-md-12 col-sm-6 col-xs-12">
-                  <div class="field-label">State / County</div>
+                  <div class="field-label">شهر</div>
                   <input type="text" name="field-name" value="" placeholder="">
                 </div>
                 <div class="form-group col-md-12 col-sm-6 col-xs-12">
-                  <div class="field-label">Postal Code</div>
+                  <div class="field-label">کدپستی</div>
                   <input type="text" name="field-name" value="" placeholder="">
                 </div>
               </div>
               <div class="row">
                 <div class="col-12">
                   <div class="stripe-section">
-                    <h5>stripe js</h5>
+                    <h5>اطلاعات کارت بانکی</h5>
                     <div class="content">
-                      <h5>dummy test</h5>
+                      <h5>کارت بانک سپه</h5>
                       <table>
                         <tr>
-                          <td>cart number</td>
+                          <td>شماره کارت</td>
                           <td>4242424242424242</td>
                         </tr>
                         <tr>
-                          <td>mm/yy</td>
+                          <td>ماه/سال</td>
                           <td>2/2020</td>
                         </tr>
                         <tr>
@@ -127,29 +127,29 @@
               <div class="checkout-details">
                 <div class="order-box">
                   <div class="title-box">
-                    <div>Product <span> Total</span></div>
+                    <div>کالا <span> مجموع</span></div>
                   </div>
                   <ul class="qty">
-                    <li>Pink Slim Shirt × 1 <span>$25.10</span></li>
-                    <li>SLim Fit Jeans × 1 <span>$555.00</span></li>
+                    <li>سحر گالن براق × 1 <span>65.000 تومان</span></li>
+                    <li>قلم موی شماره 3 × 1 <span>15.000 تومان</span></li>
                   </ul>
                   <ul class="sub-total">
-                    <li>Subtotal <span class="count">$380.10</span></li>
-                    <li>Shipping <div class="shipping">
+                    <li>زیرمجموع <span class="count"> تومان 30.000</span></li>
+                    <li>تحویل <div class="shipping">
                       <div class="shopping-option">
                         <input type="checkbox" name="free-shipping" id="free-shipping">
-                        <label for="free-shipping">Free Shipping</label>
+                        <label for="free-shipping">تحویل رایگان</label>
                       </div>
                       <div class="shopping-option">
                         <input type="checkbox" name="local-pickup" id="local-pickup">
-                        <label for="local-pickup">Local Pickup</label>
+                        <label for="local-pickup">تحویل اکسپرس</label>
                       </div>
                     </div>
                     </li>
                   </ul>
 
                   <ul class="total">
-                    <li>Total <span class="count">$620.00</span></li>
+                    <li>مجموع <span class="count">585.000 تومان</span></li>
                   </ul>
                 </div>
 
@@ -160,27 +160,27 @@
                         <li>
                           <div class="radio-option">
                             <input type="radio" name="payment-group" id="payment-1" checked>
-                            <label for="payment-1">Check Payments<span class="small-text">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</span></label>
+                            <label for="payment-1">پرداخت حضوری<span class="small-text">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</span></label>
                           </div>
                         </li>
 
                         <li>
                           <div class="radio-option">
                             <input type="radio" name="payment-group" id="payment-2">
-                            <label for="payment-2">Cash On Delivery<span class="small-text">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</span></label>
+                            <label for="payment-2">پرداخت اینترنتی<span class="small-text">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</span></label>
                           </div>
                         </li>
                         <li>
                           <div class="radio-option paypal">
                             <input type="radio" name="payment-group" id="payment-3">
-                            <label for="payment-3">PayPal<span class="image"><img src="assets/images/paypal.png" alt="" /></span></label>
+                            <label for="payment-3">پرداخت در محل<span class="image"><img src="assets/images/paypal.png" alt="" /></span></label>
                           </div>
                         </li>
                       </ul>
                     </div>
                   </div>
                   <div class="text-right">
-                    <a [routerLink]="" class="btn-solid btn">Place Order</a>
+                    <a [routerLink]="" class="btn-solid btn">قبول پرداخت</a>
                   </div>
                 </div>
               </div>

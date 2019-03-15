@@ -4,14 +4,14 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="page-title">
-                    <h2>404 page</h2>
+                    <h2>404 صفحه</h2>
                 </div>
             </div>
             <div class="col-sm-6">
                 <nav aria-label="breadcrumb" class="theme-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="'/home/one'">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">404 page</li>
+                        <li class="breadcrumb-item"><a [routerLink]="'/home/one'">صفحه اصلی</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">404 صفحه</li>
                     </ol>
                 </nav>
             </div>
@@ -26,8 +26,8 @@
             <div class="col-sm-12">
                 <div class="error-section">
                     <h1>404</h1>
-                    <h2>page not found</h2>
-                    <a [routerLink]="'/home/one'" class="btn btn-solid">back to home</a>
+                    <h2>صفحه مورد نظر یافت نشد</h2>
+                    <a [routerLink]="'/home/one'" class="btn btn-solid">بازگشت به صفحه اصلی</a>
                 </div>
             </div>
         </div>
@@ -42,9 +42,9 @@
             <div class="col-md-12">
                 <div class="success-text">
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    <h2>thank you</h2>
-                    <p>Payment is has been received Order Placed Successfully</p>
-                    <p>Transaction ID:{{orderDetails.orderId}}</p>
+                    <h2>با تشکر از شما</h2>
+                    <p>پرداخت شما با موفقیت انجام شد</p>
+                    <p>کدرهگیری:{{orderDetails.orderId}}</p>
                 </div>
             </div>
         </div>
@@ -57,26 +57,26 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="product-order">
-                    <h3>your order details</h3>
+                    <h3>جزئیات سفارش شما</h3>
                     <div class="row product-order-detail" *ngFor="let item of orderDetails.product">
                         <div class="col-3">
                             <img [src]="item.product.pictures[0]" alt="" class="img-fluid">
                         </div>
                         <div class="col-3 order_detail">
                             <div>
-                                <h4>product name</h4>
+                                <h4>نام محصول</h4>
                                 <h5>{{item.product.name}}</h5>
                             </div>
                         </div>
                         <div class="col-3 order_detail">
                             <div>
-                                <h4>quantity</h4>
+                                <h4>مقدار</h4>
                                 <h5>{{item.quantity}}</h5>
                             </div>
                         </div>
                         <div class="col-3 order_detail">
                             <div>
-                                <h4>price</h4>
+                                <h4>قیمت</h4>
                                 <h5>{{item.product.price | currency:productsService?.currency:'symbol'}}</h5>
                             </div>
                         </div>
@@ -84,9 +84,9 @@
 
                     <div class="total-sec">
                         <ul>
-                            <li>Subtotal <span>{{orderDetails.totalAmount | currency:productsService?.currency:'symbol'}}</span></li>
-                            <li>Shipping <span>$00.00</span></li>
-                            <li>Tax <span>$00.00</span></li>
+                            <li>زیرمجموع <span>{{orderDetails.totalAmount | currency:productsService?.currency:'symbol'}}</span></li>
+                            <li>تحویل <span>تومان 00.00</span></li>
+                            <li>مالیات بر ارزش افزوده <span> تومان 00.00</span></li>
                         </ul>
                     </div>
                     <div class="final-total">
@@ -97,31 +97,31 @@
             <div class="col-lg-6">
                 <div class="row order-success-sec">
                     <div class="col-sm-6">
-                        <h4>summery</h4>
+                        <h4>خلاصه</h4>
                         <ul class="order-detail">
-                            <li>order ID: {{orderDetails.orderId}}</li>
-                            <li>Order Date: October 22, 2018</li>
-                            <li>Order Total: {{orderDetails.totalAmount | currency:productsService?.currency:'symbol'}}</li>
+                            <li>شماره سفارش: {{orderDetails.orderId}}</li>
+                            <li>روز سفارش: October 22, 2018</li>
+                            <li>مجموع سفارش: {{orderDetails.totalAmount | currency:productsService?.currency:'symbol'}}</li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
-                        <h4>shipping address</h4>
+                        <h4>آدرس تحویل</h4>
                         <ul class="order-detail">
                             <li>{{orderDetails.shippingDetails.address}}</li>
                             <li>{{orderDetails.shippingDetails.state}}</li>
                             <li>{{orderDetails.shippingDetails.country}}, {{orderDetails.shippingDetails.postalcode}}</li>
-                            <li>Contact No. {{orderDetails.shippingDetails.phone}}</li>
+                            <li>شماره تماس. {{orderDetails.shippingDetails.phone}}</li>
                         </ul>
                     </div>
 
                     <div class="col-sm-12 payment-mode">
-                        <h4>payment method</h4>
-                        <p>Pay on Delivery (Cash/Card). Cash on delivery (COD) available. Card/Net banking acceptance subject to device availability.</p>
+                        <h4>شیوه پرداخت</h4>
+                        <p>پرداخت وجه نقدی در محل تحویل امکان پذیر است</p>
                     </div>
                     <div class="col-md-12">
                         <div class="delivery-sec">
-                            <h3>expected date of delivery</h3>
-                            <h2>March 21, 2019</h2>
+                            <h3>روز پیش بینی شده برای تحویل</h3>
+                            <h2>16 اردیبهشت</h2>
                         </div>
                     </div>
                 </div>

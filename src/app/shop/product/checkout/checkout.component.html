@@ -4,14 +4,14 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="page-title">
-                    <h2>Checkout</h2>
+                    <h2>پرداخت صورتحساب</h2>
                 </div>
             </div>
             <div class="col-sm-6">
                 <nav aria-label="breadcrumb" class="theme-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="'/home/one'">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                        <li class="breadcrumb-item"><a [routerLink]="'/home/one'">صفحه اصلی</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">پرداخت</li>
                     </ol>
                 </nav>
             </div>
@@ -27,106 +27,106 @@
                     <div class="row">
                         <div class="col-lg-6 col-sm-12 col-xs-12">
                             <div class="checkout-title">
-                                <h3>Billing Details</h3>
+                                <h3>جزئیات صورتحساب</h3>
                             </div>
                             <div class="row check-out">
                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <div class="field-label">First Name</div>
+                                    <div class="field-label">نام</div>
                                     <input type="text" name="firstname" [formControl]="checkoutForm.controls['firstname']" value="" placeholder="" autocomplete="off">
                                     <div *ngIf="checkoutForm.controls.firstname.touched && checkoutForm.controls.firstname.errors?.required" class="text text-danger">
-                                    First Name is required.
+                                    وارد کردن نام الزامی است.
                                     </div>
                                     <div *ngIf="checkoutForm.controls.firstname.touched && checkoutForm.controls.firstname.errors?.pattern" class="text text-danger">
-                                    First Name must be an alphabates.
+                                    نام باید از حروف الفبا تشکیل شده باشد.
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <div class="field-label">Last Name </div>
+                                    <div class="field-label">نام خانوادگی </div>
                                     <input type="text" name="lastname" [formControl]="checkoutForm.controls['lastname']" value="" placeholder="" autocomplete="off">
                                     <div *ngIf="checkoutForm.controls.lastname.touched && checkoutForm.controls.lastname.errors?.required" class="text text-danger">
-                                    Last Name is required.
+                                    وارد کردن نام خانوادگی الزامی است.
                                     </div>
                                     <div *ngIf="checkoutForm.controls.lastname.touched && checkoutForm.controls.lastname.errors?.pattern" class="text text-danger">
-                                    Last Name must be an alphabates.
+                                    تام خانوادگی باید از حروف الفبا تشکیل شده باشد.
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <div class="field-label">Phone</div>
+                                    <div class="field-label">تلفن</div>
                                     <input type="text" name="phone" [formControl]="checkoutForm.controls['phone']" value="" placeholder="" autocomplete="off">
                                     <div *ngIf="checkoutForm.controls.phone.touched && checkoutForm.controls.phone.errors?.required" class="text text-danger">
-                                     Phone No is required.
+                                     شماره تماس الزامی است.
                                     </div>
                                     <div *ngIf="checkoutForm.controls.phone.touched && checkoutForm.controls.phone.errors?.pattern" class="text text-danger">
-                                      Phone No is must be number.
+                                      شماره تماس تلفنی فقط از اعداد باید تشکیل شده باشد.
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <div class="field-label">Email Address</div>
+                                    <div class="field-label">آدرس الکترونیک</div>
                                     <input type="text" name="email" [formControl]="checkoutForm.controls['email']" value="" placeholder="" autocomplete="off">
                                     <div *ngIf="checkoutForm.controls.email.touched && checkoutForm.controls.email.errors?.required" class="text text-danger">
-                                     Email is required
+                                    آدرس الکترونیک الزامی است
                                     </div>
                                     <div *ngIf="checkoutForm.controls.email.touched && checkoutForm.controls.email.errors?.email" class="text text-danger">
-                                     Invalid Email
+                                     آدرس الکترونیک شما صحیح نیست
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <div class="field-label">Country</div>
+                                    <div class="field-label">منطقه</div>
                                     <select name="country" [formControl]="checkoutForm.controls['country']">
-                                        <option value="" selected>Select Country</option>
-                                        <option value="India">India</option>
-                                        <option value="USA">USA</option>
-                                        <option value="Australia">Australia</option>
+                                        <option value="" selected>انتخاب منطقه مسکونی</option>
+                                        <option value="India">1</option>
+                                        <option value="USA">2</option>
+                                        <option value="Australia">3</option>
                                     </select>
                                     <div *ngIf="checkoutForm.controls.country.touched && checkoutForm.controls.country.errors?.required" class="text text-danger">
-                                     Country is required
+                                     منطقه الزامی است
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <div class="field-label">Address</div>
+                                    <div class="field-label">آدرس</div>
                                     <input type="text" name="address" [formControl]="checkoutForm.controls['address']" value="" placeholder="" autocomplete="off">
                                     <div *ngIf="checkoutForm.controls.address.touched && checkoutForm.controls.address.errors?.required" class="text text-danger">
-                                     Address is required
+                                     آدرس شما الزامی است
                                     </div>
                                     <div *ngIf="checkoutForm.controls.address.touched && checkoutForm.controls.address.errors?.maxlength" class="text text-danger">
-                                      Maximum 50 character
+                                      حداکثر 50 کاراکتر
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <div class="field-label">Town/City</div>
+                                    <div class="field-label">شهر</div>
                                     <input type="text" name="town" [formControl]="checkoutForm.controls['town']" value="" placeholder="" autocomplete="off">
                                      <div *ngIf="checkoutForm.controls.town.touched && checkoutForm.controls.town.errors?.required" class="text text-danger">
-                                     City is required
+                                     شهر الزامی است
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12 col-sm-6 col-xs-12">
-                                    <div class="field-label">State</div>
+                                    <div class="field-label">منطقه</div>
                                     <input type="text" name="state" [formControl]="checkoutForm.controls['state']" value="" placeholder="" autocomplete="off">
                                      <div *ngIf="checkoutForm.controls.state.touched && checkoutForm.controls.state.errors?.required" class="text text-danger">
-                                     State is required
+                                     منطقه الزامی است
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12 col-sm-6 col-xs-12">
-                                    <div class="field-label">Postal Code</div>
+                                    <div class="field-label">کد پستی</div>
                                     <input type="text" name="postalcode" [formControl]="checkoutForm.controls['postalcode']" value="" placeholder="" autocomplete="off">
                                     <div *ngIf="checkoutForm.controls.postalcode.touched && checkoutForm.controls.postalcode.errors?.required" class="text text-danger">
-                                     Postalcode is required
+                                     کد پستی الزامی است
                                     </div>
                                 </div>
                             </div>
                           <div class="row ">
                             <div class="col-12">
                               <div class="stripe-section">
-                                <h5>stripe js</h5>
+                                <h5>کارت بانکی</h5>
                                 <div class="content">
-                                  <h5>dummy test</h5>
+                                  <h5>بانک پارسیان</h5>
                                   <table>
                                     <tr>
-                                      <td>cart number</td>
+                                      <td>شماره کارت بانکی</td>
                                       <td>4242424242424242</td>
                                     </tr>
                                     <tr>
-                                      <td>mm/yy</td>
+                                      <td>ماه/سال</td>
                                       <td>2/2020</td>
                                     </tr>
                                     <tr>
@@ -168,7 +168,7 @@
                             <div class="checkout-details">
                                 <div class="order-box">
                                     <div class="title-box">
-                                        <div>Product <span> Total</span></div>
+                                        <div>کالا <span> مجموع</span></div>
                                     </div>
                                     <ul class="qty" *ngIf='checkOutItems.length'>
                                         <li *ngFor="let item of checkOutItems">
@@ -179,28 +179,28 @@
                                         </li>
                                     </ul>
                                     <ul class="qty" *ngIf='!checkOutItems.length'>
-                                     <li class="empty-checkout"> There are no products in cart </li>
+                                     <li class="empty-checkout"> هیچ کالایی در سبد خرید شما نیست </li>
                                     </ul>
                                     <ul class="sub-total">
                                         <li>
-                                        	Subtotal <span class="count">{{ getTotal() | async | currency:productsService?.currency:'symbol'}}</span>
+                                        	زیر مجموع <span class="count">{{ getTotal() | async | currency:productsService?.currency:'symbol'}}</span>
                                         </li>
                                         <li *ngIf='checkOutItems.length'>
-                                        	Shipping
+                                        	تحویل
                                          <div class="shipping">
                                             <div class="shopping-option">
                                                 <input type="radio" name="shipping" checked="checked" id="free-shipping">
-                                                <label for="free-shipping">Shipping</label>
+                                                <label for="free-shipping">تحویل فوری</label>
                                             </div>
                                             <div class="shopping-option">
                                                 <input type="radio"  name="shipping" id="local-pickup">
-                                                <label for="local-pickup">Local Pickup</label>
+                                                <label for="local-pickup">تحویل رایگان</label>
                                             </div>
                                          </div>
                                         </li>
                                     </ul>
                                     <ul class="total">
-                                        <li>Total <span class="count">{{ getTotal() | async | currency:productsService?.currency:'symbol'}}</span></li>
+                                        <li>مجموع کل <span class="count">{{ getTotal() | async | currency:productsService?.currency:'symbol'}}</span></li>
                                     </ul>
                                 </div>
 
@@ -211,14 +211,14 @@
                                                 <li>
                                                     <div class="radio-option">
                                                         <input type="radio" [(ngModel)]="payment" [value]="false"  name="payment-group" id="payment-2">
-                                                        <label for="payment-2">Stripe
+                                                        <label for="payment-2">کارت بانکی
                                                             <span class="small-text">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</span></label>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="radio-option paypal">
                                                         <input type="radio" [(ngModel)]="payment" [value]="true" name="payment-group" id="payment-3">
-                                                        <label for="payment-3">PayPal<span class="image"><img src="assets/images/paypal.png" alt="" /></span></label>
+                                                        <label for="payment-3">پرداخت در محل<span class="image"><img src="assets/images/paypal.png" alt="" /></span></label>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -227,7 +227,7 @@
                                     <div class="text-right">
                                         <button class="btn-solid btn" [disabled]="!checkoutForm.valid" (click)="stripeCheckout()" type="submit"
                                         *ngIf="!payment">
-                                           Place Order
+                                           پرداخت 
                                         </button>
                                         <ngx-paypal [config]="payPalConfig" [ngClass]="{'btn disabled': !checkoutForm.valid}" *ngIf="payment">
                                         </ngx-paypal>

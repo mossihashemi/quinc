@@ -1,11 +1,11 @@
 // Product Colors
-export type ProductColor = 'white' | 'black' | 'red' | 'green' | 'purple' | 'yellow' | 'blue' | 'gray' | 'orange' | 'pink';
+export type ProductColor = 'سفید' | 'مشکی' | 'قرمز' | 'سبز' | 'بنفش' | 'زرد' | 'آبی' | 'طوسی' | 'نارنجی' | 'صورتی';
 
 // Product Size
-export type ProductSize = 'M' | 'L' | 'XL';
+export type ProductSize = 'کلیو' | 'گالن' | 'دبه';
 
 // Product Tag
-export type ProductTags = 'nike' | 'puma' | 'lifestyle' | 'caprese';
+export type ProductTags = 'سحر' | 'نیپون' | 'رنگسازی ایران' | 'هادی';
 
 // Product
 export interface Product {

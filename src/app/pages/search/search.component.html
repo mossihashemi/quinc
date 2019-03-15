@@ -4,14 +4,14 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="page-title">
-          <h2>search</h2>
+          <h2>جستجو</h2>
         </div>
       </div>
       <div class="col-sm-6">
         <nav aria-label="breadcrumb" class="theme-breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a [routerLink]="'/home/one'">Home</a></li>
-            <li class="breadcrumb-item active">search</li>
+            <li class="breadcrumb-item"><a [routerLink]="'/home/one'">صفحه اصلی</a></li>
+            <li class="breadcrumb-item active">جستجو</li>
           </ol>
         </nav>
       </div>
@@ -28,7 +28,7 @@
           <div class="col-lg-6 offset-lg-3">
             <form class="form-header">
               <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Search a Product">
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="کالای مورد نظر خود را جستجو کنید">
               </div>
               <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
             </form>
@@ -38,9 +38,9 @@
     </section>
       <div class="col-sm-12 text-center">
         <img src="assets/images/empty-search.jpg" class="img-fluid mb-4">
-          <h3>Sorry! Couldn't find the product you were looking For!!!    </h3>
-          <p>Please check if you have misspelt something or try searching with other words.</p>
-          <a [routerLink]="'/home/one'" class="btn btn-solid">continue shopping</a>
+          <h3>متاسفانه کالای مورد نظر شما یافت نشد!!!    </h3>
+          <p>با کلمات دیگری تلاش کنید لطفا.</p>
+          <a [routerLink]="'/home/one'" class="btn btn-solid">ادامه خرید</a>
       </div>
   </div>
 </section>

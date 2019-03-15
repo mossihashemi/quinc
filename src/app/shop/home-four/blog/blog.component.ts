@@ -37,22 +37,22 @@ export class BlogFourComponent implements OnInit {
   // Blog
   public blog = [{
       image: 'assets/images/vegetables/blog/1.jpg',
-      date: '25 January 2018',
-      title: 'Lorem ipsum dolor sit consectetur adipiscing elit,',
-      by: 'John Dio'
+      date: '1397 بهمن ',
+      title: 'کاربرد رنگ ها در دکوراسیون داخلی',
+      by: 'مصطفی هاشمی'
     }, {
       image: 'assets/images/vegetables/blog/2.jpg',
-      date: '26 January 2018',
-      title: 'Lorem ipsum dolor sit consectetur adipiscing elit,',
-      by: 'John Dio'
+      date: ' دی 1397',
+      title: 'روانشناسی رنگ ها',
+      by: 'مسعود هاشمی'
     }, {
       image: 'assets/images/vegetables/blog/3.jpg',
-      date: '27 January 2018',
-      title: 'Lorem ipsum dolor sit consectetur adipiscing elit,',
-      by: 'John Dio'
+      date: ' اسفند 1397',
+      title: 'حضور نیپون در رنگ ابزار',
+      by: 'مظفر هاشمی'
     }, {
       image: 'assets/images/vegetables/blog/4.jpg',
-      date: '28 January 2018',
+      date: '12 اسفند 1397',
       title: 'Lorem ipsum dolor sit consectetur adipiscing elit,',
       by: 'John Dio'
   }]

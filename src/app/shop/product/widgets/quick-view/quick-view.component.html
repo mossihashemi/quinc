@@ -20,7 +20,7 @@
                   <li [class]="variant.color" [class.active]="selectedColor == variant.images" (click)="changeVariantImage(variant.images)" *ngFor="let variant of product.variants"></li>
                 </ul>
                 <div class="border-product">
-                  <h6 class="product-title">product details</h6>
+                  <h6 class="product-title">جزئیات کالا</h6>
                   <p>{{product.shortDetails}}</p>
                 </div>
                 <div class="product-description border-product">
@@ -31,7 +31,7 @@
                       </li>
                     </ul>
                   </div>
-                  <h6 class="product-title">quantity</h6>
+                  <h6 class="product-title">مقدار</h6>
                   <div class="qty-box">
                     <div class="input-group">
                       <span class="input-group-prepend">
@@ -49,8 +49,8 @@
                   </div>
                 </div>
                 <div class="product-buttons">
-                  <a [routerLink]="" (click)="addToCart(product, qty.value)" class="btn btn-solid" [class.disabled]="qty.value > product.stock">add to cart</a>
-                  <a [href]="'/home/left-sidebar/product/'+product.id" class="btn btn-solid" [class.disabled]="qty.value > product.stock">view detail</a>
+                  <a [routerLink]="" (click)="addToCart(product, qty.value)" class="btn btn-solid" [class.disabled]="qty.value > product.stock">اضافه به سبد</a>
+                  <a [href]="'/home/left-sidebar/product/'+product.id" class="btn btn-solid" [class.disabled]="qty.value > product.stock">نمایش جزئیات</a>
                 </div>
               </div>
             </div>

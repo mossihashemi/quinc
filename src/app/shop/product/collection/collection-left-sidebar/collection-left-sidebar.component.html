@@ -4,14 +4,14 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="page-title">
-          <h2>collection</h2>
+          <h2>محصولات</h2>
         </div>
       </div>
       <div class="col-sm-6">
         <nav aria-label="breadcrumb" class="theme-breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a [routerLink]="'/home/one'">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Collection</li>
+            <li class="breadcrumb-item"><a [routerLink]="'/home/one'">صفحه اصلی</a></li>
+            <li class="breadcrumb-item active" aria-current="page">محصولات</li>
           </ol>
         </nav>
       </div>
@@ -38,7 +38,7 @@
             <app-new-product></app-new-product>
             <div class="collection-sidebar-banner">
               <a [routerLink]="">
-                <img src="assets/images/side-banner.png" class="img-fluid" alt="">
+                <img src="assets/images/side-banner.jpg" class="img-fluid" alt="">
               </a>
             </div>
           </div>
@@ -52,9 +52,9 @@
                   <div class="top-banner-wrapper">
                     <a [routerLink]="'/home/left-sidebar/collection/men'"><img src="assets/images/mega-menu/2.jpg" class="img-fluid" alt=""></a>
                     <div class="top-banner-content small-section">
-                      <h4>fashion</h4>
-                      <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                      <h4>رنگ</h4>
+                      <h5>بهترین نوع رنگ برای نقاشی ساختمان</h5>
+                      <p>با صرف کمی زمان و کسب مقداری اطلاعات، می‌توانید بهترین رنگ را انتخاب کنید و فضای شاد و زیباتری برای خانه خود بسازید. بعضی رنگ‌ها نیاز به نیروی متخصص ندارند و می‌توانید خود با کمک اعضای خانواده آن‌ها را اجرا کنید. </p>
                     </div>
                   </div>
                   <div class="collection-product-wrapper">
@@ -65,7 +65,7 @@
                           <div class="col-xl-12">
                             <div class="filter-main-btn">
                               <span class="filter-btn btn btn-theme" (click)="mobileFilter()">
-                                <i class="fa fa-filter" aria-hidden="true"></i> Filter
+                                <i class="fa fa-filter" aria-hidden="true"></i> فیلتر
                               </span>
                             </div>
                           </div>
@@ -74,7 +74,7 @@
                           <div class="col-12">
                             <div class="product-filter-content">
                               <div class="search-count">
-                                <h5>Showing Products 1-{{filterItems().length}}</h5>
+                                <h5>نمایش محصولات  1  تا{{filterItems().length}}</h5>
                               </div>
                               <div class="collection-grid-view">
                                 <ul>
@@ -94,13 +94,13 @@
                               </div>
                               <div class="product-page-filter">
                                 <select (change)="onChangeSorting($event.target.value)">
-                                  <option value="asc">Sorting items</option>
+                                  <option value="asc">چیدمان کالا</option>
                                   <option value="asc">Ascending Order</option>
                                   <option value="desc">Descending Order</option>
-                                  <option value="a-z">Alphabetically, A-Z</option>
-                                  <option value="z-a">Alphabetically, Z-A</option>
-                                  <option value="low">Price, low to high</option>
-                                  <option value="high">Price, high to low</option>
+                                  <option value="a-z">بر اساس حروف الفبا</option>
+                                  <option value="z-a">برعکس حروف الفبا</option>
+                                  <option value="low">قیمت, پایین به بالا</option>
+                                  <option value="high">قیمت, بالا به پایین</option>
                                 </select>
                               </div>
                             </div>
