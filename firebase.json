@@ -1,6 +1,12 @@
 {
   "hosting": {
     "public": "dist/multikart",
+    "rewrites":[
+      {
+        "source" : "**",
+        "destination": "/index.html"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",

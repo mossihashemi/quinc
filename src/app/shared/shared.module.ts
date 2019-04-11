@@ -22,7 +22,6 @@ import { NavbarComponent } from './header/widgets/navbar/navbar.component';
 import { SettingsComponent } from './header/widgets/settings/settings.component';
 import { LeftMenuComponent } from './header/widgets/left-menu/left-menu.component';
 import { FooterOneComponent } from './footer/footer-one/footer-one.component';
-import { FooterTwoComponent } from './footer/footer-two/footer-two.component';
 import { InformationComponent } from './footer/widgets/information/information.component';
 import { CategoriesComponent } from './footer/widgets/categories/categories.component';
 import { WhyWeChooseComponent } from './footer/widgets/why-we-choose/why-we-choose.component';
@@ -38,7 +37,6 @@ import { SocialComponent } from './footer/widgets/social/social.component';
     HeaderTwoComponent,
     HeaderThreeComponent,
     FooterOneComponent,
-    FooterTwoComponent,
     OrderByPipe
   ],
   imports: [
@@ -51,7 +49,6 @@ import { SocialComponent } from './footer/widgets/social/social.component';
     HeaderTwoComponent,
     HeaderThreeComponent,
     FooterOneComponent,
-    FooterTwoComponent,
     OrderByPipe,
     NavbarComponent,
     SettingsComponent,
