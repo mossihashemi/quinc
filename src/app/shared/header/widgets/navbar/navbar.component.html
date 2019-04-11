@@ -9,58 +9,19 @@
         بازگشت<i class="fa fa-angle-right pl-2" aria-hidden="true"></i>
       </div>
     </li>
-   <li><a [routerLink]="">{{ 'صفحه اصلی' }}</a>
-      <ul>
-        <li><a [routerLink]="'/home/four'" target="_blank">{{ 'تست'  }}</a></li>
-      </ul>
-    </li>
     <li class="mega">
-      <a [routerLink]="'/home/left-sidebar/collection/all'">{{ 'رنگ'  }}
+      <a [routerLink]="'/blog/left-sidebar'">{{'ماهنامه' }}
         <div class="lable-nav">{{ 'جدید' }}</div>
       </a>
-      <ul class="mega-menu feature-menu">
-        <li>
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-4">
-                <a [routerLink]="'/blog/left-sidebar'">
-                  <img src="assets/images/feature/blog-page.jpg" alt="">
-                  <h6>{{ 'رنگ های ساختمانی'  }} </h6>
-                </a>
-              </div>
-              <div class="col-xl-4">
-                <a [routerLink]="'/blog/right-sidebar'">
-                  <img src="assets/images/feature/blog(right-sidebar).jpg" alt="">
-                  <h6>{{ 'رنگ های استخری'  }}</h6>
-              </a>
-              </div>
-              <div class="col-xl-4">
-                <a [routerLink]="'/blog/details'">
-                  <img src="assets/images/feature/blog-detail.jpg" alt="">
-                  <h6>{{ 'رنگ های هنری'  }}</h6>
-              </a>
-              </div>
-              <div class="col-xl-4">
-                <a [routerLink]="'/home/left-sidebar/collection/all'">
-                  <img src="assets/images/feature/category-page.jpg" alt="">
-                  <h6>{{ 'category-left-sidebar' | translate }}</h6>
-              </a>
-              </div>
-              <div class="col-xl-4">
-                <a [routerLink]="'/home/right-sidebar/collection/all'">
-                  <img src="assets/images/feature/category-page(right).jpg" alt="">
-                  <h6>{{ 'category-right-sidebar' | translate }}</h6>
-              </a>
-              </div>
-              <div class="col-xl-4">
-                <a [routerLink]="'/home/no-sidebar/collection/all'">
-                  <img src="assets/images/feature/category-page(no-sidebar).jpg" alt="">
-                  <h6>{{ 'category-no-sidebar' | translate }}</h6>
-              </a>
-              </div>
-            </div>
-          </div>
-        </li>
+    </li>
+    <li><a [routerLink]="">{{ 'ترکیب رنگ کامپیوتری'  }}</a>
+      <ul>
+        <li><a [routerLink]="">{{ 'معرفی سیستم تینت' }}</a></li>
+        <li><a [routerLink]="">{{ 'رنگ های قابل تینت' }}</a></li>
+        <li><a [routerLink]="">{{ 'مراحل ترکیب رنگ' }}</a></li>
+        <li><a [routerLink]="">{{ 'انتخاب کد رنگ' }}</a></li>
+        <li><a [routerLink]="">{{ 'مرکز ترکیب رنگ' }}</a></li>
+
       </ul>
     </li>
     <li class="mega"><a [routerLink]="">{{ 'ابزار'  }}</a>
@@ -69,63 +30,63 @@
           <div class="container">
             <div class="row">
               <div class="col-xl-3">
-                <a [routerLink]="'/home/left-sidebar/product/1'">
-                  <img src="assets/images/feature/product-page(left-sidebar).jpg" alt="">
-                  <h6>{{ 'left-sidebar' | translate }}</h6>
+                <a [routerLink]="">
+                  <img src="assets/images/feature/sandpaper.jpg" alt="">
+                  <h6>{{ 'انواع سنباده'  }}</h6>
               </a>
               </div>
               <div class="col-xl-3">
-                <a [routerLink]="'/home/right-sidebar/product/1'">
-                  <img src="assets/images/feature/product-page(right-sidebar).jpg" alt="">
-                  <h6>{{ 'right-sidebar' | translate }}</h6>
+                <a [routerLink]="">
+                  <img src="assets/images/feature/ghaltak.jpg" alt="">
+                  <h6>{{ ' غلطک نقاشی '  }}</h6>
               </a>
               </div>
               <div class="col-xl-3">
-                <a [routerLink]="'/home/no-sidebar/product/1'">
-                  <img src="assets/images/feature/product-page(no-sidebar).jpg" alt="">
-                  <h6>{{ 'no-sidebar' | translate }}</h6>
+                <a [routerLink]="">
+                  <img src="assets/images/feature/kardak.jpg" alt="">
+                  <h6>{{ 'لیسه و کاردک'  }}</h6>
               </a>
               </div>
               <div class="col-xl-3">
-                <a [routerLink]="'/home/col-left/product/1'">
-                  <img src="assets/images/feature/product-page(3-col-left).jpg" alt="">
-                  <h6>{{ '3-col-thumbnail-left' | translate }}</h6>
+                <a [routerLink]="">
+                  <img src="assets/images/feature/chasb.jpg" alt="">
+                  <h6>{{ 'انواع چسب'  }}</h6>
               </a>
               </div>
               <div class="col-xl-3">
-                <a [routerLink]="'/home/col-right/product/1'">
-                  <img src="assets/images/feature/product-page(3-col-right).jpg" alt="">
-                  <h6>{{ '3-col-thumbnail-right' | translate }}</h6>
+                <a [routerLink]="">
+                  <img src="assets/images/feature/gloves.jpg" alt="">
+                  <h6>{{ 'دستکش کار'  }}</h6>
                 </a>
               </div>
               <div class="col-xl-3">
-                <a [routerLink]="'/home/column/product/1'">
-                  <img src="assets/images/feature/product-page(3-column).jpg" alt="">
-                  <h6>{{ 'thumbnail-below' | translate }}</h6>
+                <a [routerLink]="">
+                  <img src="assets/images/feature/ladder.jpg" alt="">
+                  <h6>{{ 'انواع نردبان' }}</h6>
               </a>
               </div>
               <div class="col-xl-3">
-                <a [routerLink]="'/home/accordian/product/1'">
-                  <img src="assets/images/feature/product-page(accordian).jpg" alt="">
-                  <h6>{{ 'accordian-details' | translate }}</h6>
+                <a [routerLink]="">
+                  <img src="assets/images/feature/nail.jpg" alt="">
+                  <h6>{{ ' پیج،میخ،رولپلاک'  }}</h6>
               </a>
               </div>
               <div class="col-xl-3">
-                <a [routerLink]="'/home/left-image/product/1'">
-                  <img src="assets/images/feature/product-page(left-image).jpg" alt="">
-                  <h6>{{ 'thumbnail-left' | translate }}</h6>
+                <a [routerLink]="">
+                  <img src="assets/images/feature/tiner.jpg" alt="">
+                  <h6>{{ 'تینر و حلّال'  }}</h6>
               </a>
               </div>
               <div class="col-xl-3">
-                <a [routerLink]="'/home/right-image/product/1'">
-                  <img src="assets/images/feature/product-page(right-image).jpg" alt="">
-                  <h6>{{ 'thumbnail-right' | translate }}</h6>
+                <a [routerLink]="">
+                  <img src="assets/images/feature/oil.jpg" alt="">
+                  <h6>{{ 'انواع روغن'  }}</h6>
               </a>
               </div>
               <div class="col-xl-3">
-                <a [routerLink]="'/home/vertical/product/1'">
-                  <img src="assets/images/feature/product-page(vertical-tab).jpg" alt="">
-                  <h6>{{ 'vertical-tab' | translate }}</h6>
+                <a [routerLink]="">
+                  <img src="assets/images/feature/putty.jpg" alt="">
+                  <h6>{{ 'پودر و خمیر بتونه' }}</h6>
               </a>
               </div>
             </div>
@@ -133,27 +94,7 @@
         </li>
       </ul>
     </li>
-    <li><a [routerLink]="">{{ 'خدمات'  }}</a>
-      <ul>
-        <li><a [routerLink]="'/pages/about-us'">{{ 'about-us' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/404'">404</a></li>
-        <li><a [routerLink]="'/pages/lookbook'">{{ 'lookbook' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/login'">{{ 'login' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/register'">{{ 'register' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/search'">{{ 'search' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/wishlist'">{{ 'wishlist' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/cart'">{{ 'cart' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/collection'">{{ 'collection' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/forgetpassword'">{{ 'forget-password' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/contact'">{{ 'contact' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/checkout'">{{ 'checkout' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/compare'">{{ 'compare' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/order-success'">{{ 'order-success' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/dashboard'">{{ 'dashboard' | translate }}</a></li>
-        <li><a [routerLink]="'/pages/faq'">{{ 'FAQ' | translate }}</a></li>
-      </ul>
-    </li>
-    <li class="mega"><a [routerLink]="">{{ 'فروشگاه'  }}</a>
+    <li class="mega"><a [routerLink]="">{{ 'رنگ'  }}</a>
       <ul class="mega-menu full-mega-menu" id="mega-menu">
         <li>
           <div class="container">

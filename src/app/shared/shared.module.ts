@@ -14,8 +14,7 @@ import { PaginationService } from "./classes/paginate";
 // Pipes
 import { OrderByPipe } from './pipes/order-by.pipe';
 // components
-import { HeaderOneComponent } from './header/header-one/header-one.component';
-import { HeaderTwoComponent } from './header/header-two/header-two.component';
+
 import { HeaderThreeComponent } from './header/header-three/header-three.component';
 import { TopbarComponent } from './header/widgets/topbar/topbar.component';
 import { NavbarComponent } from './header/widgets/navbar/navbar.component';
@@ -33,8 +32,6 @@ import { SocialComponent } from './footer/widgets/social/social.component';
   exports: [
     CommonModule,
     TranslateModule,
-    HeaderOneComponent,
-    HeaderTwoComponent,
     HeaderThreeComponent,
     FooterOneComponent,
     OrderByPipe
@@ -45,8 +42,6 @@ import { SocialComponent } from './footer/widgets/social/social.component';
     TranslateModule
   ],
   declarations: [
-    HeaderOneComponent,
-    HeaderTwoComponent,
     HeaderThreeComponent,
     FooterOneComponent,
     OrderByPipe,
