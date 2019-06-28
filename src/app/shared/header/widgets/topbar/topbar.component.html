@@ -16,14 +16,25 @@
         <a [routerLink]="'/home/wishlist'"><i class="fa fa-heart" aria-hidden="true"></i>{{ 'لیست علاقه مندی ها'  }}</a>
       </li>
       <li class="onhover-dropdown mobile-account">
-        <i class="fa fa-user" aria-hidden="true"></i> {{ 'حساب کاربری من'  }}
+        <div *ngIf="!user"> <i class="fa fa-user" aria-hidden="true"></i> {{ 'ورود | ثبت نام'  }}</div>
+        <div *ngIf="user"> <i class="fa fa-user" aria-hidden="true"></i> {{  user.displayName  }}</div>
         <ul class="onhover-show-div">
-          <li>
+          <li *ngIf="!user">
             <a [routerLink]="'/pages/login'" data-lng="en">
               {{ ' ورود به حساب' }}
             </a>
           </li>
           <li>
+            <a [routerLink]="'/home/cart'" data-lng="en">
+              {{ 'سبد خرید من' }}
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="'/home/wishlist'" data-lng="en">
+              {{ 'مورد علاقه های من' }}
+            </a>
+          </li>
+          <li *ngIf="user">
             <a (click)="logout()">
               {{ 'خروج' }}
             </a>

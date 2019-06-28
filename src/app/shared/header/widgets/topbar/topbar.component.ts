@@ -3,7 +3,7 @@ import { Product } from '../../../classes/product';
 import { WishlistService } from '../../../services/wishlist.service';
 import { Observable, of } from 'rxjs';
 import { AngularFireAuth } from 'angularfire2/auth';
-
+import * as firebase from 'firebase';
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
@@ -11,8 +11,11 @@ import { AngularFireAuth } from 'angularfire2/auth';
 })
 export class TopbarComponent {
 
+  user: firebase.User;
+
+
   constructor(private afAuth: AngularFireAuth) {
-    afAuth.authState.subscribe(x => console.log(x));
+    afAuth.authState.subscribe(user => this.user = user);
   }
 
   logout() {
